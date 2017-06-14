@@ -1,1 +1,4 @@
-js principal
+function imprimir()
+			{
+				window.print();
+			}a
