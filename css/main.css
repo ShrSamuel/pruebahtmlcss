@@ -1,2 +1,13 @@
- css principal
+.envoltorio{
+	text-align: center;
+		}
 
+.envoltorio[button]
+{
+	position: absolute;
+}
+canvas
+{
+background-color: blue;
+
+}
