@@ -1,12 +1,18 @@
 var myGamePiece;
+var allowedKey = {
+
+};
+
 var myGameArea =
                  {
                     canvas :
                         document.createElement("canvas"),
+                        
                         start : function()
                         {
-                            this.canvas.width = 200;
-                            this.canvas.height = 480;
+                            
+                            this.canvas.width = 480;
+                            this.canvas.height = 500;
                             this.context = this.canvas.getContext("2d");
                             document.getElementById("zonaJuego").insertBefore(this.canvas,
                                                            document.getElementById("zonaJuego").childNodes[0]);
@@ -22,11 +28,17 @@ var myGameArea =
                         stop: function(){
                             clearInterval(this.interval);
                         }
+
                       
                 }   
 
 
-
+function startGame()
+{
+    myGamePiece = new component(30,30,"./images/emoticono.png",10,120,"image");
+    myGameArea.start();
+    
+}
 
 
 function component(width,height,color,x,y,type)
