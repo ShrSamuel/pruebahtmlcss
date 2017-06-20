@@ -64,6 +64,20 @@
 			
 		
 		</div>
+
+<div class="row">
+
+		<div class="col-sm-1"></div>		
+		<div class="col-sm-10">
+			<button class=btn-danger onclick="startGame()">Empezar Juego</button>
+		</div>
+		<div class="col-sm-1"></div>
+</div>
+<div style="text-align:center;width:480px;">
+  <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+  <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+  <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+  <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
 </div>
 </body>
 </html>
