@@ -55,11 +55,17 @@ konamiCodePosition =0 ;
 function activateCheats(){
 var foto = document.createElement("img");
 foto.src="./images/emoticono.png";
+foto.id="smyly"
 //foto.setAttribute("src","../images/emoticono.jpg");
 //elem.setAttribute("height", "768");
 //elem.setAttribute("width", "1024");
 document.getElementById("Konami").appendChild(foto)
 
-$("").remove().delay(10000000);
+
+//Como remove no es una funcion que suela ser de cola hay que ponerla 
+//dentro para que funcione el delay
+$("foto").addClass=".rotated";
+$("#smyly").delay(15000).queue(function(){$(this).remove();
+});
 //alert ("WebD desarroyada por Samuel Herrera");
 }

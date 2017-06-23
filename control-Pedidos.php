@@ -41,76 +41,62 @@
 	</div>
 </nav>
 <div class="row">
-		<div class="col-sm-5" >
-			<p id="div1"><h2>lalala</h2>Cosas</p>
-
-
-			<h1 id="demo"></h1>
+		<div class="col-sm-5" >	
+		<?php require 'php/conexBD.php';
 		
+		
+		echo $conect;
+		
+		?>	
 		</div>
 		<div class="col-sm-2">
 		
-			<button class="btn-primary" onclick="imprimir()">holi</button>
+			
 			
 		</div>
 		<div class="col-sm-5">
 
 			
 
-			<!--<button>Get External Content</button>
-			-->
-
-			<p><b>Start typing a name in the input field below:</b></p>
-				<form> 
-				First name: <input type="text" onkeyup="showHint(this.value)">
-				</form>
-				<p>Suggestions: <span id="txtHint"></span></p>
 			
 		
-</div>		
+		</div>		
 </div>
 
 <div class="row">
 
 		<div class="col-sm-1">
-			<p>jska</p>
+
 		</div>		
 		<div class="col-sm-10" >
-		<div id="zonaJuego" class="envoltorio">
-				<button class=btn-danger onclick="startGame()">Empezar Juego</button>
-	  		</div>
-		
 		</div>
 		
 		<div class="col-sm-1">
-			<p>sasjpoia</p>
 		</div>
 </div>
 <div class="row">
 	<div class=col-sm-4></div>
 	<div class=col-sm-4>
 	<div class="envoltorio">
-		  <button id="up" class="btn-primary" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button>
+		
 	</div>
-		  <br><br>
+		  
 	<div class="envoltorio">
-	  <button class="btn-primary" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
-		  <button class="btn-primary" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button>
 	</div>
-	<br><br>
+	
 	<div class="envoltorio">
-		  <button id = "down" class="btn-primary" onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>	
+		  
 	</div>
 	</div>
 	<div id="Konami" class=col-sm-4>
-		<a href="pruebabbdd.php">prueba bbdd</a>
+		
 	</div>
 </div>
 
 
 
 <div style="text-align:center;width:480px;">
-  
+ </div>
  
 </body>
 <footer>
